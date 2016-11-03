@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style>
+ul{
+	list-style:none;
+}
+ul li{
+	border:1px solid #000;
+	clear:both;
+	float:left;
+	height:40px;
+	width:200px;
+}
+</style>
+<script src="jquery.js" type="text/javascript" ></script>
+<script src="test.js" type="text/javascript" ></script>
+<script src="test.js" type="text/javascript" ></script>
+<script src="jqsfext.js" type="text/javascript" ></script>
+<script type="text/javascript">
+$(function(){
+	
+	$("#fupload").on("change", function() {
+		$(this).lcShowImg($(this),$("#fshow"));
+	})
+	
+	$("#fupload2").on("change", function() {
+		$(this).lcShowImg($(this),$("#fshow2"));
+	})
+
+
+})
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<style>
+#finfo,#fshow,#fshow2{
+	border:1px solid #000;
+	width:600px;
+	height:200px;
+}
+
+#fshow img,#fshow2 img{
+	max-width:400px;
+	max-height:200px;
+}
+</style>
+
+</head>
+
+<body>
+<div>文件上传测试事例</div>
+<input type="file" id="fupload" />
+<input type="file" id="fupload2" />
+<div id="finfo"></div>
+<div id="fshow"></div>
+<div id="fshow2"></div>
+
+
+
+
+
+
+
+
+
+<hr />
+<input type="date" value="2015-07-01">
+<input type="datetime-local" value="2015-07-01T02:03:04">
+<input type="color" value="#ff0000">
+
+
+<ul>
+	<li class="test1"></li>
+	<li class="test2"></li>
+	<li class="test3"></li>
+	<li class="test4"></li>
+	<li class="test5"></li>
+	<li class="test6"></li>
+	<li class="test7"></li>
+	<li class="test8"></li>
+	<li class="test9"></li>
+	<li class="test10"></li>
+	<li class="test11"></li>
+	<li class="test12"></li>
+</ul>
+
+
+<input id="testPopupButton1" name="aaa" value="test1" type="button" />
+<input id="testPopupButton2" name="aaa" value="test2" type="button" />
+
+
+<div id="divTest"></div>
+</body>
+</html>
